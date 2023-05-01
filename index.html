@@ -1,0 +1,127 @@
+<!--Atajo: Escribir html, autocompletar con html 5-->
+<!DOCTYPE html>
+<html lang="es">
+    <!--Lenguaje de la pagina/ cambiar "en" (english) por "es" (spanish) -->
+<head>
+    <!-- Carácteres -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo de página -->
+    <title>Google</title>
+    <!--Link para conectar html con css =link+enter/ css=nombre de la carpeta + "/" =meterse a un archivo de un folder  main.css = nombre del archivo-->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+<!--Navegador-->
+   <header>
+<!--nav = navegador/Aporta navegaciondentro de la pagina-->
+    <nav>
+<!--unordered list-->
+<!--Para eliminar las viñetas de la lista agremamos una clase en donde empieza la lista-->
+<!--POr lo tanto; "<ul> pasa a ser <ul class="nav-right-section"(dentro de las comillas ponemos el nombre que querramos)-->
+        <ul class="nav-right-section">
+<!--li = elemento de la lista -->
+            <li>
+<!--Agregamos etiqueta <a> ancla con el "href" = Ubicación/ ¿A donde me llevas?-->
+<!--Dentro de los parentesis de href ponemos el URL de la direccion que querrramos y afuera antes de cerrar el elemento ancla escribimos el nombre del elemento de la lista (li)-->
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a>
+            </li>
+            <li>
+                <a href="https://www.google.com.mx/imghp?hl=es-419&tab=ri&ogbl">Imágenes</a>
+            </li>
+           
+            <li class="menu"><a href=""></a>
+             </li>
+
+            <li>
+                <a href="">
+            
+                <!-- src = source (link de la foto)/ alt = descripción de la foto-->
+
+                    <img src="https://lh3.googleusercontent.com/ogw/AOLn63F03PmluNJcJz3tjY-cDUUkbILOcEghsQT0c3dW=s32-c-mo" alt="Foto de Belén">
+                </a>
+                    
+                     </li>
+                </a>
+            </li>
+
+            
+
+            
+        </ul>
+
+    </nav>
+
+   </header>
+
+
+   <main>
+    <!-- Main Buscador-->
+    <!--Para editar la imagen vamos agregando clases para editar en css-->
+    <section class="main-logo">
+        <!--Link de logo de google-->
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Logo de Google">
+    </section>
+
+    <section class="main-input">
+        <div class="main-input-container"> 
+            <!--Span = EN ESTA OCASIÓN LO VAMOS A UTILIZAR PARA;Elemento que va a mostrar el ícono de búesqueda-->
+            <span class="search-icon"></span>
+        <!--Input text = caja de texto (buscador de google)-->
+            <input type="text">
+        <!--# = Gato muerto = Se coloca cuándo se sabe que no habrá nada dentro de los paréntesis-->
+        <!--Creamos los dos elementos ancla "<a>" para colocar los dos iconos que van dentro de la barra de búsqueda en google-->
+        <!--Creamos clases para cada uno de los elementos ancla para así poder editar en css-->
+            <a class="micro-icon" href="#"></a>
+            <a class="cam-icon" href="#"></a>
+
+        </div>
+    </section>
+    <!-- Cuándo tenemos elementos que estan estilados exactamenete igaules, la mejor práctica, en vez de agregar dos clases y editarlas por separado y sea el mismo código, es mejor hacer un 2 EN 1-->
+    <section class="main-buttons">
+        <div>
+            <button>Google Search</button>
+        </div>
+        <div>
+            <button>I'm feeling lucky!</button>
+        </div>
+
+    </section>
+   </main>
+<!--Footer = pie de página-->
+   <footer>
+    <!--1ra lista-->
+    <ul class="footer-left">
+        <li>
+        <a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+        </li>
+        <li>
+         <a href="https://www.google.com/intl/es-419_mx/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        </li>
+        <li>
+            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+        </li>
+        <li>
+            <a href="https://google.com/search/howsearchworks/?fg=1">How search works</a>
+        </li>
+    </ul>
+    <!--2da lista-->
+    <ul class="footer-right">
+        <li>
+            <a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privaciy</a>
+           
+        </li>
+        <li>
+            <a href="https://policies.google.com/terms?hl=es-419&fg=1">Terms</a>
+        </li>
+        <li>
+        <!--Como en este caso el apartado de settings es un botón y no un link ponemos gato muerto en el elemento ancla-->
+            <a href="#">Settings</a>
+        </li>
+    </ul>
+
+   </footer>
+</body>
+</html>

@@ -1,0 +1,257 @@
+body {
+    margin:0;
+    padding:0;
+    font-size: 13px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/********************************************/
+/****************************************/
+/********************************/
+/* Navegación*/
+/* Para navegar dentro de css e ir cambiando las cosas es de manera "anidada"*/
+/* Para entrar a nav, primero entramos a header (desde html)*/
+
+header{
+    width: 100%;
+    height: 60px;
+   
+}
+
+header nav{
+    /*display + flex =ayuda a organizar todos los elementos que yo escoja dentro de un BLOQUE*/
+    display: flex;
+    /*justify-content = justicar el contenido*/
+    /*flex-start = pone el bloque al principio del documento/ flex-end = pone el bloque al final del documento*/
+    justify-content: flex-end ;
+    margin: right 15px; 
+}
+
+/* Para acceder a las listas, lo vamos haciendo de forma anidada*/
+/*1 header, 2 nav + "." para llamar  a la clase que nombramos como "nav-right-section"*/
+
+header nav .nav-right-section {
+/*Para eliminar las viñetas, usamos la propiedad de "list-style" + none (ninguna viñeta/estilo de)*/
+
+    list-style: none;
+    display:flex;
+    justify-content: center;
+/* align-items = Permite alinear los items verticalmente*/
+    align-items: center;
+    width: 250px;
+    height: auto;
+}
+
+a{
+    /*Quita líena de debajo del texto (Gmail/imagenes)*/
+    text-decoration: none;
+    /*Cambia el cursor a un pointer*/
+    cursor:pointer;
+
+}
+
+nav .nav-right-section  a{
+    margin-right: 25px;
+    color:#000000DE;
+
+}
+
+/* */
+nav .nav-right-section .menu{
+    background-image: url("https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png");
+    width: 20px;
+    height: 20px;
+    /*settea  el tamaño de la imagen del icono a lo mas grande posible siempre y cuando ete dentro del nav-right-section*/
+    background-size: contain; 
+}
+
+/*Vamos a mandar a llamar a la imagen de html, podemos crear una clase*/
+/* Pero como es la unica clase dentro del documento haremos lo siguiente:*/
+/* Lo siguiente afectaria a todas las imágenes pero como solo hay una lo acemos*/
+
+nav .nav-right-section img{
+    /*Redondea bordes de la imagen*/
+    border-radius: 60px;
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+}
+/********************************************/
+/****************************************/
+/********************************/
+/*BUSCADOR*/
+
+main{
+    /*Agrega margen arriiba*/
+    margin-top: 160px;
+    /*centra el contendio de lo que esta en main horizontalmente*/
+    text-align: center;
+}
+
+main .main-logo{
+
+    width: 530px;
+    /* Centra el elemento horizontalmente dentro de su contenedor*/
+    /*El 0 dice que no hay espacio entre este elemento y los que esten arriba o abajo*/
+    margin: 0 auto;
+    margin-bottom: 35px;
+  
+}
+main .main-logo img{
+    height: 120px;
+
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+
+main .main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    /*Para quitar el borde de la cajita de en medio y se mezcle con el resto (none)*/
+    border: none;
+    width: 425px;
+    height: 40px;
+    /*outline = apara eliminar la caja al momento de hacer clic*/
+    outline: none;
+}
+
+/*Para hacer el efecto en el buscador  de "sobresalir" al sobreponer el mouse */
+
+main .main-input-container:hover{
+/*clase (main-input-container) + : + elemento (hover)/*
+/* Utilizamos "hover" = pseudo-clase de CSS; cuándo el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamennte lo activa*/
+/*Existen diferentes formas para ponerl el box-shadow: Ver MDN reference*/
+/*Ejemplo: 2px (eje/ offset X) 2px (eje/offset Y) 2px (blur radius) 1px (spread-radius) rgba(0,0,0,0.2); (solor)*/
+box-shadow: 0 1px 6px 0px #20212447;
+border-color: #dfe1e500;
+}
+/*Seccion "main" + clase ".main-input" + "search-icon"*/
+
+main .main-input .search-icon{
+    background-image: url("https://seekicon.com/free-icon-download/search_20.svg");
+    /*Evitar repetición- se usa como precaución*/ 
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Ajustable al tamaño máximo*/
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    padding-left: 6%;
+
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .cam-icon{
+
+    background-image: url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 7%;
+
+}
+
+/*Para poder poner cada botón lado a lado (bloque)*/
+/*inline-block = bloque en linea*/
+main .main-buttons div{
+    display: inline-block;
+
+
+}
+
+/*2 en 1*/
+/*Cómo va a ser la miama información para los dos "botones", creamos solo 1 clase*/
+
+main .main-buttons button{
+    border: none;
+    height: 36px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    /*color = color de la fuente*/
+    color:#3c4043;
+    border-radius: 4px;
+    padding: 0 15px;
+    border: 1px solid #f8f9fa;
+    margin-right: 10px;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.274);
+    border: 1px solid #dadce0;
+    color: #202124;
+    /*Cambiar el mouse de una flecha a una mano al momento de para el cursor sobre un bloque*/
+    cursor: pointer;
+}
+
+/********************************************/
+/****************************************/
+/********************************/
+/*FOOTER*/
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    /*Propiedades para separar las columnas*/
+    display: grid;
+    /*Dos columnas*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-top: 1px solid #e4e4e4;
+    /*Para que el pie de página se vaya hasta abajo*/
+    bottom: 0;
+}
+
+/*Editar listas*/
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    /*flex = responsivo */
+    display:flex;
+    padding-left: 0px;
+
+}
+
+/*Editar anclas*/
+/*  No se le pone punto para una clase, ya que vamos  editar todas las anclas*/
+footer ul li a{
+    color: #70757a;
+    /*margen para separar cada uno de los elementos (privacy, settings, etc)*/
+    margin: 10px;
+}
+
+/*Para editar las listas mas especificas y colocar una a la derecha y otra a la izquierda, utilizamos las clases de cada lista*/
+
+footer footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+

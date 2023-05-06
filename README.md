@@ -5,7 +5,7 @@
 ### Index
 * [1. Intro](#Intro)
 * [2. That developed?](#That developed?)
-* [3. Project goals](]#Project goals)
+* [3. Project goals](#Project goals)
 * [4. Link to the demo](#Link to the demo)
 
 ***

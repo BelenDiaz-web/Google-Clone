@@ -3,10 +3,10 @@
 ###### Created in HTML5 and CSS3 in the Bootcmap of TecnolochicasPro
 
 ### Index
-* [1. Intro](#Intro)
-* [2. That developed?](#That developed?)
-* [3. Project goals](#Project goals)
-* [4. Link to the demo](#Link to the demo)
+* [1. Intro](https://github.com/BelenDiaz-web/Google-Clone/tree/main#1-intro)
+* [2. That developed?](https://github.com/BelenDiaz-web/Google-Clone/tree/main#2-that-developed)
+* [3. Project goals](https://github.com/BelenDiaz-web/Google-Clone/tree/main#3-project-goals)
+* [4. Link to the demo](https://github.com/BelenDiaz-web/Google-Clone/tree/main#4link-to-the-demo)
 
 ***
 ## 1. Intro 
